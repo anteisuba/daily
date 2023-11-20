@@ -12,10 +12,17 @@ public class Base { //父类
 	protected int n2 = 200;
 	int n3 = 300;
 	private int n4 = 400;
-	public Base() { //无参构造器
-		System.out.println("base()...");
-		
+	
+//	public Base() { //无参构造器
+//		System.out.println("base()...");
+//		
+//	}
+	
+	public Base(String name,int nam) {
+		System.out.println("父类Base(String name,int nam)构造器被调用");
 	}
+	
+	
 	//在父类提供一个public的方法,返回了n4
 	public int f1() {
 		return n4;
